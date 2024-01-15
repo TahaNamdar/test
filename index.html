@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <style>
+    .wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: row-reverse;
+    }
+
+    .box {
+      background-color: gray;
+      border-radius: 10px;
+      height: 200px;
+      width: 22%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 40px;
+      color: white;
+    }
+  </style>
+
+  <body>
+    <div class="wrapper">
+      <div class="box">1</div>
+      <div class="box" id="box2">2</div>
+      <div class="box">3</div>
+      <div class="box">4</div>
+    </div>
+  </body>
+
+  <script>
+    const getId = (id) => {
+      return document.getElementById(id);
+    };
+
+    const boxElement = getId("box2");
+
+    boxElement.style.backgroundColor = "red";
+  </script>
+</html>
